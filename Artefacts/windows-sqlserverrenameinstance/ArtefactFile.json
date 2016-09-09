@@ -2,21 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
   "title": "Rename SQL Server Instance",
   "description": "Rename SQL Server Default instance on the Windows target machine",
-  "iconUri": "",
+  "publisher": "AG2L Developpement",
+  "iconUri": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/Artifacts/windows-run-powershell/powershell.png",
   "targetOsType": "Windows",
   "parameters": {
-    "<OldServerName>": {
+    "OldServerName": {
       "type": "string",
       "displayName": "Current Instance Name",
       "description": "Instance name of the current "
     },
-    "<NewSQLSeverName>": {
+    "NewSQLSeverName": {
       "type": "string",
       "displayName": "New Instance Name",
       "description": "Instance name of the current "
     }
   },
   "runCommand": {
-     "commandToExecute": "[concat('powershell.exe -File RenameSQLServerInstance.ps1', ' -OldServerName ', parameters('OldServerName'), ' -NewSQLSeverName ', parameters('NewSQLSeverName'))]"
+     "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass -File RenameSQLServerInstance.ps1', ' -OldServerName ', parameters('OldServerName'), ' -NewSQLSeverName ', parameters('NewSQLSeverName'))]"
   }
 }
