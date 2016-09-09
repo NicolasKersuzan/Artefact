@@ -3,7 +3,7 @@
   "title": "Rename SQL Server Instance",
   "description": "Rename SQL Server Default instance on the Windows target machine",
   "publisher": "AG2L Developpement",
-  "iconUri": "https://github.com/NicolasKersuzan/Artefact/tree/master/Artefacts/windows-sqlserverrenameinstance/AG2L-Logo.png",
+  "iconUri": "https://github.com/NicolasKersuzan/Artefact/blob/master/Artefacts/windows-sqlserverrenameinstance/AG2L-Logo.png",
   "targetOsType":"Windows",
   "parameters": {
     "OldServerName": {
