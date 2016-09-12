@@ -5,19 +5,20 @@
   "publisher": "AG2L Developpement",
   "iconUri": "https://github.com/NicolasKersuzan/Artefact/blob/master/Artefacts/windows-sqlserverrenameinstance/AG2L-Logo.png",
   "targetOsType":"Windows",
-  "parameters": {
-    "OldServerName": {
-      "type": "string",
-      "displayName": "Current Instance Name",
-      "description": "Instance name of the current "
-    },
-    "NewSQLSeverName": {
-      "type": "string",
-      "displayName": "New Instance Name",
-      "description": "Instance name of the current "
-    }
-  },
+  //"parameters": {
+  //  "OldServerName": {
+  //    "type": "string",
+  //    "displayName": "Current Instance Name",
+  //    "description": "Instance name of the current "
+  //  },
+  //  "NewSQLSeverName": {
+  //    "type": "string",
+  //    "displayName": "New Instance Name",
+  //    "description": "Instance name of the current "
+  //  }
+  //},
   "runCommand": {
-     "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass -File RenameSQLServerInstance.ps1', ' -OldServerName ', parameters('OldServerName'), ' -NewSQLSeverName ', parameters('NewSQLSeverName'))]"
+    //"commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass -File RenameSQLServerInstance.ps1', ' -OldServerName ', parameters('OldServerName'), ' -NewSQLSeverName ', parameters('NewSQLSeverName'))]"
+     "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass -File RenameSQLServerInstance.ps1')]"
   }
 }
