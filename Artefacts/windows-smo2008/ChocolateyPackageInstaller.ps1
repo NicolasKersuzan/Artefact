@@ -79,6 +79,7 @@ function DisplayArgValues
     WriteLog "========== Configuration =========="
     WriteLog $("RawPackagesList : " + $RawPackagesList)
     WriteLog "========== Configuration =========="
+    WriteLog "========== test =========="
 }
 
 ##################################################################################################
