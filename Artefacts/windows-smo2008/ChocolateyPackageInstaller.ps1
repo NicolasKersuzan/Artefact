@@ -76,6 +76,7 @@ $ChocolateyInstallLog = Join-Path -Path $ChocolateyPackageInstallerFolder -Child
 
 function DisplayArgValues
 {
+    WriteLog "========== test =========="
     WriteLog "========== Configuration =========="
     WriteLog $("RawPackagesList : " + $RawPackagesList)
     WriteLog "========== Configuration =========="
