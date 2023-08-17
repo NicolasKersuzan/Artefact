@@ -16,7 +16,6 @@ Function IsStartSQLServer($name)
     [ARRAY]$ServiceMSSQL
     $ServiceMSSQL = get-service -Name $name | Where-Object {$_.Status -eq "Running"}  | foreach {$_.Status}
     $ServiceNb =$ServiceMSSQL.count
-    Write-host "test"
     If  ($ServiceNb -gt 0)
     {
         return $true
